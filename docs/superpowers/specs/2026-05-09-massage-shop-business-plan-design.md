@@ -1,7 +1,7 @@
 # Massage Shop Business Plan — Design Document
 
-**Date**: 2026-05-09 (rev 2026-05-09 v2)
-**Status**: WIP (Sections 1-6 of 9 complete; Sections 7-9 pending)
+**Date**: 2026-05-09 (rev 2026-05-09 v3)
+**Status**: ✅ ALL 9 SECTIONS COMPLETE — pending user review before writing-plans
 **Working Brand Name**: Khum Lanna Spa (ขุมล้านนาสปา) — TBD, ยังไม่ตัดสินใจ
 
 ---
@@ -102,7 +102,8 @@
 ### Membership Logic
 - Pro tier 4,500 บาท = ลูกค้าจ่ายเฉลี่ย 562 บาท/ครั้ง (vs walk-in 700)
 - ต้นทุนต่อครั้ง ~150-200 บาท → margin ยังดี 60-70%
-- **เป้าหมาย**: 80 active members ภายในเดือน 12 = recurring revenue 360K/เดือน (ครอบคลุม fixed cost เกือบหมด)
+- **เป้าหมาย (3-bed scale)**: 60-70 active members ภายในเดือน 12 = recurring revenue ~280-310K/เดือน (ครอบคลุม fixed cost ~150K สบายๆ)
+- **หมายเหตุ**: เดิมตั้ง 80 ในแผน 4-bed/1.5M — ลด proportional กับ scale
 
 ### Pricing Logic
 - ราคา walk-in ใกล้เคียง Nimman main (ไม่ต่ำกว่า) — premium positioning
@@ -251,6 +252,8 @@
 - รายได้ 12 เดือน: ~3.8M บาท
 - กำไรสุทธิ: ~1.0M (margin 26%)
 - Payback period: ~16-20 เดือนนับจากเปิด
+
+> ⚠️ **ตัวเลขทั้งหมดเป็นการประมาณการเบื้องต้น** — ก่อนยื่นแบงก์ต้องให้ accountant มืออาชีพทำ Excel financial model 3 ปี (P&L + cash flow + balance sheet) พร้อม sensitivity analysis 3 scenarios เพื่อ stress-test ตัวเลข
 
 ---
 
@@ -632,44 +635,344 @@ Outsourced:
 
 ---
 
-## Section 7: Legal & Permits — ⏳ TODO
+## Section 7: Legal & Permits ✅
 
-หัวข้อที่จะลงรายละเอียด:
-- ใบอนุญาตประกอบกิจการสปา (กรมสนับสนุนบริการสุขภาพ — สบส.)
-- ใบอนุญาตผู้ดำเนินการสปา (เจ้าของต้องเรียน 100 ชม.)
-- ใบประกอบโรคศิลป์แพทย์แผนไทย (ถ้าจะนวดเอง)
-- จดทะเบียนนิติบุคคล (บริษัท vs ห้างหุ้นส่วน — แนะนำ บจก.)
-- ภาษี: VAT, ภาษีหัก ณ ที่จ่าย, ภาษีป้าย, ภาษีโรงเรือน
-- พ.ร.บ. คุ้มครองแรงงาน + ประกันสังคม
-- พนักงานต่างด้าว (ถ้ามี) — work permit
-- ประกันภัยทรัพย์สิน + ประกันความรับผิดต่อบุคคลที่สาม
-- Timeline ขออนุญาต (2-4 เดือน)
+### 1. ใบอนุญาตประกอบกิจการสปา (สบส.) ⭐ สำคัญสุด
+
+**ออกโดย**: กรมสนับสนุนบริการสุขภาพ (สบส.) กระทรวงสาธารณสุข
+**ประเภทที่เลือก**: "สถานประกอบการเพื่อสุขภาพ ประเภท สปา" (ครอบคลุม นวด + treatment + อโรมา ทั้งหมด)
+**ค่าธรรมเนียม**: ~5,000-10,000 บาท + ค่าตรวจสถานที่
+**อายุใบ**: 5 ปี (ต่ออายุได้)
+
+**Requirements ก่อนยื่น:**
+
+- ผู้ดำเนินการมีใบรับรอง (ดูข้อ 2)
+- พนักงานนวดมี cert ขั้นต่ำ "นวดเพื่อสุขภาพ 372 ชม." ทุกคน
+- สถานที่ผ่าน inspection (ห้องนวด ขั้นต่ำ 5 ตร.ม., มีผ้าม่าน/พาร์ทิชัน, แสงสว่าง, ระบายอากาศ)
+- มีอุปกรณ์ตามมาตรฐาน (เตียงนวด, ผ้าสะอาด, ห้องน้ำ, น้ำดื่ม)
+- ป้ายราคาแสดงชัด
+
+**Timeline**: 4-8 สัปดาห์หลังยื่น (รวม inspection)
+
+### 2. ใบอนุญาตผู้ดำเนินการสปา ⭐ ต้องมีก่อนยื่น สบส.
+
+**สำหรับ**: เจ้าของหรือ manager (1 คนพอ)
+**หลักสูตร**: 100 ชั่วโมง (4 weeks intensive) ที่สถาบันที่ สบส.รับรอง
+**สถาบันที่เปิดในเชียงใหม่**:
+
+- ITM (International Training Massage School) Chiang Mai
+- กรมพัฒนาฝีมือแรงงาน เชียงใหม่
+- โรงเรียนนวดพระราชวังเก่า
+
+**ค่าเรียน**: ~15,000-25,000 บาท
+**ผ่านสอบ**: → ใบประกาศ → ใช้ขอใบ สบส.
+**Timeline**: 6-8 สัปดาห์ (เรียน + รอใบ)
+
+⚠️ **ตัดสินใจสำคัญ**: ใครเรียน?
+
+- **เจ้าของเรียน** → ใบติดตัวเจ้าของ ปลอดภัยกว่า (manager ลาออกก็ยังมีใบ)
+- **Manager เรียน** → เร็วกว่าถ้าเจ้าของไม่ว่าง แต่เสี่ยงถ้า manager ลาออก
+- **แนะนำ**: เจ้าของเรียนเอง
+
+### 3. ใบประกอบโรคศิลป์แพทย์แผนไทย (ไม่จำเป็น)
+
+- จำเป็นเฉพาะถ้าเจ้าของจะนวดบำบัดเอง
+- หลักสูตร 800 ชม. (1-2 ปี) + สอบสภาแพทย์แผนไทย
+- ⚠️ ของ therapists ที่จ้างมา: ขั้นต่ำใบ "นวดเพื่อสุขภาพ 372 ชม." (กฎ สบส.)
+
+### 4. จดทะเบียนนิติบุคคล — บริษัทจำกัด (บจก.) ⭐ แนะนำ
+
+**ทำไมเลือก บจก. ไม่ใช่ ห้างหุ้นส่วน หรือ บุคคลธรรมดา:**
+
+- Limited liability — ธุรกิจล้ม เจ้าของไม่โดนยึดทรัพย์ส่วนตัว
+- ดูน่าเชื่อถือ → ขอกู้ได้ง่ายกว่า
+- ภาษีดีกว่าบุคคลธรรมดา (rate 15-20% vs progressive 5-35%)
+- ยืดหยุ่นกว่าตอนต้องการเพิ่มหุ้นส่วน/ขยาย
+
+**ขั้นตอน:**
+
+1. จองชื่อบริษัท (กรมพัฒนาธุรกิจการค้า) — 1-2 วัน
+2. ทำหนังสือบริคณห์สนธิ + ข้อบังคับบริษัท
+3. ประชุมจัดตั้ง (ผู้ก่อการ ≥3 คน — เพื่อน/ครอบครัว ok)
+4. จดทะเบียนบริษัท
+5. ขอเลขประจำตัวผู้เสียภาษี (TAX ID)
+6. เปิดบัญชีบริษัท
+
+**ทุนจดทะเบียน**: ขั้นต่ำ 100K (ชำระจริง 25% = 25K) — ระบุ 1M เพื่อให้ดูจริงจังต่อแบงก์
+**ค่าจด + ทนาย/บัญชี**: ~10,000-15,000
+**Timeline**: 2-4 สัปดาห์
+
+### 5. ภาษี
+
+| ประเภทภาษี | rate | เมื่อไหร่ต้องจ่าย |
+|---|---|---|
+| **VAT** | 7% | รายได้ >1.8M/ปี (จะถึงเดือน 4-6) |
+| **ภาษีเงินได้นิติบุคคล** | 15% (กำไร <300K/ปี) → 20% (>3M/ปี) | ปีละครั้ง |
+| **ภาษีหัก ณ ที่จ่าย ภงด.1** (พนักงาน) | progressive | รายเดือน |
+| **ภาษีหัก ณ ที่จ่าย ภงด.3** (ค่าเช่า 5%) | 5% | รายเดือน |
+| **ภาษีหัก ณ ที่จ่าย ภงด.53** (ค่าโฆษณา 3%) | 3% | รายเดือน |
+| **ภาษีป้าย** (เทศบาล) | 500-3,000/ปี | ปีละครั้ง |
+| **ภาษีที่ดินและสิ่งปลูกสร้าง** | varies | ดูสัญญาเช่า — ปกติเจ้าของจ่าย |
+
+🔑 **Tactic VAT**: รวม VAT ในป้ายราคา (เช่น "Lanna Massage 700 baht") — ฝรั่งเข้าใจง่าย ไม่งง
+🔑 **Hire accountant from month 1** — 3-5K/เดือน คุ้มค่ามาก ป้องกัน penalty
+
+### 6. พ.ร.บ. คุ้มครองแรงงาน
+
+- **ค่าแรงขั้นต่ำเชียงใหม่**: 360 บาท/วัน (~10,800/เดือน) → ฐาน 8K + commission ผ่านได้ถ้า total >10,800
+- **ชั่วโมงทำงาน**: ≤48 ชม./สัปดาห์
+- **วันหยุดประจำปี**: ≥6 วัน, วันหยุดราชการ ≥13 วัน, วันหยุดสัปดาห์ ≥1 วัน
+- **ลาป่วย**: ≤30 วัน/ปี (ได้ค่าจ้าง)
+- **ลาคลอด**: 98 วัน (ได้ค่าจ้าง 45 วัน + ประกันสังคม 45 วัน)
+- **เลิกจ้าง**: แจ้งล่วงหน้า 1 งวดเงินเดือน + จ่ายชดเชยตามอายุงาน
+
+### 7. ประกันสังคม + กองทุนเงินทดแทน
+
+- **ประกันสังคม**: นายจ้าง 5% + ลูกจ้าง 5% (cap 750/ฝั่ง, ฐานสูงสุด 15K)
+- ลงทะเบียนนายจ้างภายใน 30 วันหลังจ้างคนแรก
+- คุ้มครอง: เจ็บป่วย, อุบัติเหตุ, คลอด, เสียชีวิต, สงเคราะห์, ชราภาพ, ว่างงาน
+- **กองทุนเงินทดแทน**: นายจ้างจ่าย ~0.2-1% ของค่าจ้าง — คุ้มครองอุบัติเหตุจากการทำงาน
+
+### 8. พนักงานต่างด้าว (ถ้ามี)
+
+- Work permit + Non-Immigrant LA visa
+- โควต้า 4 ต่างด้าว/1 ไทย
+- ค่าธรรมเนียม ~5,000-15,000/คน/ปี
+- 🔑 **แนะนำ**: ปีแรกรับเฉพาะคนไทย → ลด complexity
+
+### 9. ประกันภัย (สำคัญ — ห้ามข้าม)
+
+| ประเภทประกัน | งบ/ปี | คุ้มครอง |
+|---|---|---|
+| **ประกันทรัพย์สิน** (ไฟ/น้ำท่วม/โจรกรรม) | 8,000-15,000 | ทรัพย์ในร้าน 1.5M |
+| **ประกันความรับผิดต่อบุคคลที่สาม (Public Liability)** ⭐ | 10,000-20,000 | ลูกค้าบาดเจ็บในร้าน — วงเงิน 5M |
+| **ประกัน Professional Indemnity** (therapist) | 5,000-10,000 | malpractice claims |
+| **ประกันสุขภาพหมู่พนักงาน** (optional) | 3,000-6,000/คน | retention tool |
+| **รวม** | **25,000-50,000/ปี** | |
+
+### 10. ใบอนุญาตอื่น
+
+- **ใบอนุญาตติดตั้งป้าย** (เทศบาลนครเชียงใหม่) — ก่อนติดป้าย
+- **ใบรับรองการตรวจน้ำ** (ถ้ามีน้ำดื่มเอง)
+- **ใบอนุญาตจำหน่าย retail** (ถ้าขายผลิตภัณฑ์ปลีก เช่น essential oil — เริ่มจาก แค่ลงทะเบียน อย. ก่อน)
+
+### Permits Timeline Summary
+
+| ช่วงเวลา | สิ่งที่ต้องทำ |
+|---|---|
+| **เดือน -6** | เริ่มเรียนหลักสูตร 100 ชม. ผู้ดำเนินการสปา (เจ้าของ) |
+| **เดือน -5** | จดทะเบียนบริษัท + เลข TAX ID + บัญชีบริษัท |
+| **เดือน -4** | จบหลักสูตร 100 ชม. → ใบประกาศ |
+| **เดือน -3** | เซ็นสัญญาเช่า + ยื่นเอกสารเริ่มต้น สบส. |
+| **เดือน -2** | Renovation 50% + ยื่นใบ สบส. (ก่อนเปิดได้ที่สถานที่ใกล้พร้อม) |
+| **เดือน -1** | สบส. ตรวจสถานที่ → ออกใบ + ลงทะเบียนประกันสังคม + ทำประกันภัย |
+| **เดือน 0** | ใบ สบส. ในมือ → เปิดได้ |
 
 ---
 
-## Section 8: Risks & Mitigations — ⏳ TODO
+## Section 8: Risks & Mitigations ✅
 
-หัวข้อที่จะลงรายละเอียด:
-- ความเสี่ยงตลาด (low season, COVID-like events, จีนปิดทัวร์)
-- ความเสี่ยงพนักงาน (therapist ลาออก, ขโมยลูกค้า, no-show)
-- ความเสี่ยงการเงิน (ramp-up ช้ากว่าคาด, cost overrun)
-- ความเสี่ยงปฏิบัติการ (อุบัติเหตุลูกค้า, ร้องเรียน, รีวิวเสีย)
-- ความเสี่ยง regulatory (ตรวจสบส., เพื่อนบ้านร้องเรียน)
-- Mitigation plan แต่ละข้อ + budget สำรอง
+### A. Market Risks (ภายนอก)
+
+| Risk | Prob | Impact | Mitigation |
+|---|---|---|---|
+| Low season May-Sep ดิ่ง 30-40% | High | High | เน้น expat/long-stay (ไม่กระทบ), promotion offseason, retreat packages |
+| Pandemic / global event | Low-Med | Critical | Working capital + insurance รัฐ + pivot to home service |
+| จีนปิดทัวร์ (geopolitical) | Med | Med | Diversify customer base, ไม่พึ่งจีน >30% |
+| คู่แข่งใหม่เปิดในซอย | Med-High | Med | Brand loyalty + membership lock-in (members ≠ price-shoppers) |
+| เศรษฐกิจไทยถดถอย | Med | Low-Med | Target ต่างชาติ + nomad ที่จ่ายเป็น USD/EUR |
+
+### B. Operational Risks
+
+| Risk | Prob | Impact | Mitigation |
+|---|---|---|---|
+| อุบัติเหตุลูกค้า (สลิป, แพ้น้ำมัน, อาการแย่) | Low-Med | High | Contraindication checklist + insurance + waiver form + first-aid |
+| รีวิวเสีย Google 1-2 stars | High | Med | Response template <24hr + offer remedy + flag inappropriate |
+| ไฟไหม้ / น้ำท่วม | Low | Critical | ประกันทรัพย์สิน + smoke detector + extinguisher + drill quarterly |
+| ขโมย / staff fraud | Low-Med | Med | CCTV, daily cash reconciliation, dual signature, audit |
+| เครื่องเสีย (แอร์, อบผ้า, น้ำ) | Med | Low-Med | Maintenance schedule + emergency vendor list + 5K reserve |
+
+### C. Financial Risks
+
+| Risk | Prob | Impact | Mitigation |
+|---|---|---|---|
+| Ramp-up ช้ากว่าคาด — cash run out เดือน 5-6 | **High** | **Critical** | Working capital 220K + Plan B 100K (วงเงินเสริม) + cut marketing first |
+| Cost overrun renovation +30% | Med | High | Fixed-price contract + 10% contingency + 3 quotes per item |
+| Refund spike / chargeback | Low | Low | Refund policy <2% expected, monitor monthly |
+| Bank loan rejection | Med | Critical | Apply 2 banks parallel + family loan backup |
+| VAT compliance error → fine | Med | Med | Hire accountant from month 1 |
+
+### D. People Risks
+
+| Risk | Prob | Impact | Mitigation |
+|---|---|---|---|
+| **Manager ลาออก** | Med | **Critical** | SOP doc complete (manager ออก ส่งต่อได้), non-compete, 2-year contract incentive, succession plan |
+| Therapist ขโมยลูกค้า / เปิดร้านแข่ง | Med-High | High | Non-compete + customer data ownership + rotation ลูกค้าไม่ติดคนเดียว |
+| Therapist no-show / mass resignation | Med | High | Freelance pool 2-3 standby, cross-train, fair pay above market |
+| Customer harassment toward staff | Low-Med | Med-High | Clear policy, zero-tolerance, security button, blacklist system |
+| Owner burnout (exp = 0 stress สูง) | High | High | Hire competent manager, set boundaries, accountant + lawyer on retainer |
+
+### E. Regulatory Risks
+
+| Risk | Prob | Impact | Mitigation |
+|---|---|---|---|
+| ตรวจ สบส. → ปิดร้านชั่วคราว | Low | High | SOP compliance + monthly self-audit + relationship with local officer |
+| เพื่อนบ้านร้องเรียน (เสียง, parking) | Med | Med | เลือกทำเล neighborhood OK, soundproof, parking plan |
+| พนักงานไม่มีใบ cert ตรวจพบ | Low | High | ตรวจใบทุกคนก่อนรับเข้า + audit quarterly |
+| VAT/แรงงาน inspection | Med | Med | Clean books from day 1, accountant ทำเอกสารครบ |
+
+### Reserve Funds & Insurance Summary
+
+- **Emergency fund**: 100K (ขอวงเงินเสริมจาก family/bank)
+- **Insurance combined**: ~25-50K/ปี
+- **ที่ปรึกษากฎหมาย retainer**: 3K/เดือน
+- **Accountant retainer**: 3-5K/เดือน
+
+### Risk Register (ทำหลังเปิด)
+
+ทุกเดือน manager update register:
+
+| Risk | Prob | Impact | Mitigation status | Owner | Last review |
 
 ---
 
-## Section 9: 12-Month Phased Roadmap — ⏳ TODO
+## Section 9: 12-Month Phased Roadmap ✅
 
-หัวข้อที่จะลงรายละเอียด:
-- เดือน -6 ถึง -4: ศึกษาตลาด, อบรม, หา manager, จดทะเบียนบริษัท
-- เดือน -3: หาทำเล, เซ็นสัญญา, เริ่มขออนุญาต
-- เดือน -2: renovation, recruit, training
-- เดือน -1: soft launch, dry run, marketing seed
-- เดือน 0: grand opening
-- เดือน 1-3: focus on review collection, member acquisition
-- เดือน 4-6: optimize operations, expand menu
-- เดือน 7-12: scale, prepare for branch 2
+### Phase 0: Pre-launch (เดือน -6 ถึง -1) — 6 เดือน
+
+**เดือน -6:**
+
+- [ ] Owner: เริ่มหลักสูตร 100 ชม. ผู้ดำเนินการสปา (เรียน 4 weeks intensive)
+- [ ] Owner: ลงพื้นที่สำรวจ Nimman ซอยใน — รวบรวมข้อมูลคู่แข่ง 20 ร้าน (price, services, decor, traffic)
+- [ ] เริ่มหา manager (LinkedIn, headhunter, Anantara/Akyra alumni)
+- [ ] Refine business plan + financial Excel model
+- [ ] Apply credit guarantee บสย. preliminary
+
+**เดือน -5:**
+
+- [ ] จดทะเบียนบริษัทจำกัด → เลข TAX ID → บัญชีบริษัท
+- [ ] Hire accountant + lawyer (retainer)
+- [ ] สัมภาษณ์ manager candidates (≥5 คน)
+- [ ] **ยื่นเอกสารกู้** (ออมสิน + กรุงไทย parallel)
+- [ ] Branding: hire designer (logo + brand guideline)
+- [ ] Owner: จบหลักสูตร 100 ชม. → ใบประกาศ
+
+**เดือน -4:**
+
+- [ ] Confirm manager hire (sign 2-year contract, start month -3)
+- [ ] Sign บสย. + bank loan agreement → เงินเข้าบัญชี
+- [ ] Property hunting (target view 5-10 properties)
+- [ ] Photoshoot vendor หา (3 quotes)
+- [ ] IG account seeding ramp up (2-3 posts/wk)
+
+**เดือน -3:**
+
+- [ ] **Sign lease** (target 24-28K + free rent 1-2 mo)
+- [ ] Manager full-time start
+- [ ] Hire renovation contractor (3 quotes, fixed-price + 10% contingency)
+- [ ] เริ่ม renovation (target 6 weeks)
+- [ ] **ยื่นใบ สบส.** (ใบดำเนินการต้องได้ก่อน)
+- [ ] เริ่ม recruit therapists (target 4 — 1 senior + 3 regular)
+- [ ] Order furniture, equipment, linens (lead time 2-4 weeks)
+
+**เดือน -2:**
+
+- [ ] Renovation 50% done
+- [ ] Therapist offers signed (start month -1)
+- [ ] Brand assets finalized (logo, signage, name cards, packaging)
+- [ ] Setup booking system + POS
+- [ ] **Photoshoot** done — output ready
+- [ ] Launch event invite list ready (50-80 names)
+- [ ] Partnership outreach: coworking, hotel concierge (target ≥5 MOU)
+
+**เดือน -1:**
+
+- [ ] Renovation 100% done + final inspection
+- [ ] Furniture installed
+- [ ] **Staff training 14-day program**
+- [ ] **Soft launch**: free preview สำหรับ nomad/expat 30-50 คน → 20-30 Google reviews
+- [ ] Listings live: Google Business Profile, Klook, Viator, Treatwell
+- [ ] IG: ramp up to daily posts + stories
+- [ ] Press outreach (Citylife, Citylocating, TAT)
+- [ ] **ใบ สบส. inspection passed → license received** ⭐
+- [ ] ลงทะเบียนประกันสังคม + ทำประกันภัยทุกประเภท
+
+### Phase 1: Launch (เดือน 0 — Grand Opening Month)
+
+- [ ] Soft opening week 1 (limited hours, friends/family discount)
+- [ ] **Grand opening event** Friday week 2 (50-80 invitees)
+- [ ] Influencer collab 5-8 starts
+- [ ] Klook intro promo -15%
+- [ ] Daily Google review ask + content
+- [ ] Track every booking source, every customer
+
+🎯 **KPI**: 30+ Google reviews, 50+ Klook bookings, 5 members signed
+
+### Phase 2: Survival (เดือน 1-3)
+
+🎯 **KPI**:
+
+- Month 1: revenue 85K, 10 members
+- Month 2: revenue 145K, 18 members
+- Month 3: revenue 215K (**break-even**), 25 members
+
+**Focus:**
+
+- Review velocity: ขอ Google review ทุก customer
+- Member acquisition funnel optimization
+- Weekly team meeting + monthly P&L review
+- Iterate menu/pricing weekly if not converting
+
+🚨 **Red flag check**: เดือน 3 ยังไม่ break-even → emergency review meeting:
+
+- ลด OpEx (cut marketing first)
+- เปลี่ยน pricing
+- Re-evaluate membership funnel
+
+### Phase 3: Stabilization (เดือน 4-6)
+
+🎯 **KPI**: revenue 275-395K, members 25 → 40
+
+**Focus:**
+
+- Optimize operations: utilization analysis, peak/off-peak pricing
+- Add 1-2 services if data supports (เช่น scrub, facial)
+- Strengthen partnerships: hotel concierge bonus structure
+- Hire backup therapist (5th)
+- **Adjust marketing budget upward** (10K → 15K) จาก cashflow
+- เริ่มเข้าระบบ VAT (รายได้สะสมจะใกล้ 1.8M)
+
+### Phase 4: Growth (เดือน 7-9)
+
+🎯 **KPI**: revenue 470-550K, members 50-58
+
+**Focus:**
+
+- Brand consolidation: รีวิว 200+, rating ≥4.8
+- Launch yearly Lanna Card membership
+- Begin retreat partnership offerings
+- Career path สำหรับ senior therapist
+- Cash reserve building (target 2-month OpEx sitting in account)
+
+### Phase 5: Scale Prep (เดือน 10-12)
+
+🎯 **KPI**: revenue 580-650K, members 60-70, payback path clear
+
+**Focus:**
+
+- Add 1 bed (เป็น 4) ถ้า utilization >60% sustained
+- เริ่มสำรวจทำเล branch 2 (Nimman main? เมืองเก่า upscale? สันติธรรม?)
+- Document SOP fully — copy-paste replicate-able
+- รวบรวม customer behavior data สำหรับ branch 2 plan
+- ประเมินรีไฟแนนซ์เงินกู้ (rate ลดลง?)
+
+### Year 1 Exit Criteria — สำหรับ pivot/expand decisions
+
+| Outcome | Indicator | Action |
+|---|---|---|
+| ✅ **Strong** | Revenue >600K/mo + members >70 + rating >4.8 | Expand: branch 2 หรือเพิ่มเตียง |
+| ⚠️ **OK** | Revenue 400-600K/mo + members 40-70 | Consolidate, optimize, ห้ามรีบขยาย |
+| 🚨 **Weak** | Revenue <400K/mo + members <40 | Pivot: price, location, concept หรือ stop loss |
 
 ---
 
@@ -679,7 +982,8 @@ Outsourced:
 - [ ] วงเงินกู้ที่ขอแน่นอน (700K vs 800K — ขึ้นกับ equity ที่ลงได้)
 - [ ] เลือกธนาคารไหน (ออมสิน vs กรุงไทย) → ต้องไป consult เจ้าหน้าที่
 - [ ] หา manager ตัวจริง (ตัดสินผ่าน probation 3 เดือน)
-- [ ] Section 7-9 ยังไม่ได้ลงรายละเอียด (Legal, Risks, Roadmap)
+- [ ] เจ้าของจะเรียนหลักสูตร 100 ชม. ที่สถาบันไหน (ITM vs กรมพัฒนาฝีมือฯ)
+- [ ] หาผู้ก่อการบริษัท ≥3 คน (เพื่อน/ครอบครัว)
 
 ---
 
@@ -695,19 +999,16 @@ Outsourced:
 6. Timeline → 6-12 เดือน
 7. Concept (final) → Lanna luxury + membership + tourists welcome
 8. ทำเล (final) → นิมมานซอยใน
-9. Section 1-2 (Concept + Menu) → approved
-10. Section 3 (Location) → approved
-11. **งบปรับ → 1M (equity 200-300K + loan 700-800K)** ← critical change
-12. Section 4 (Financial v2) + 4.5 (Loan strategy) → revised + approved
-13. Section 5 (Operations & Staffing) + 6 (Marketing) → completed
+9. **งบปรับ → 1M (equity 200-300K + loan 700-800K)** ← critical change
+10. Section 1-9 ทั้งหมด → completed
 
-**ขั้นต่อไปเมื่อกลับมา:**
+**ขั้นต่อไป:**
 
-- Section 7 (Legal & Permits) — สำคัญมาก: ใบ สบส., ใบดำเนินการสปา, นิติบุคคล, ภาษี, แรงงาน, ประกัน
-- Section 8 (Risks & Mitigations) — market risk, staff risk, financial risk, ops, regulatory
-- Section 9 (12-month Phased Roadmap) — เดือน -6 ถึง 12
-- จบ spec → self-review → user final review → invoke writing-plans skill
+- ✅ Spec self-review เสร็จ
+- ⏳ User review spec → ขอให้อ่านเอกสารทั้งฉบับและให้ feedback
+- ⏳ ปรับตาม feedback (ถ้ามี)
+- ⏳ Invoke `superpowers:writing-plans` skill เพื่อสร้าง implementation plan
 
-**สถานะ skill workflow**: `superpowers:brainstorming` ยังอยู่ใน "Present design sections" phase
+**สถานะ skill workflow**: `superpowers:brainstorming` → กำลังเข้าสู่ user-review gate
 
 **Skill workflow ที่ใช้อยู่:** `superpowers:brainstorming` (ยังอยู่ใน phase "Present design sections" — task #4)
