@@ -1,7 +1,7 @@
 # Massage Shop Business Plan — Design Document
 
-**Date**: 2026-05-09
-**Status**: WIP (Sections 1-4 of 9 complete; Sections 5-9 pending)
+**Date**: 2026-05-09 (rev 2026-05-09 v2)
+**Status**: WIP (Sections 1-6 of 9 complete; Sections 7-9 pending)
 **Working Brand Name**: Khum Lanna Spa (ขุมล้านนาสปา) — TBD, ยังไม่ตัดสินใจ
 
 ---
@@ -13,7 +13,9 @@
 | **ประเภทธุรกิจ** | นวดไทยแผนโบราณ + Day Spa (hybrid) |
 | **Concept** | Lanna Wellness Studio — สปา Lanna หรู + ระบบสมาชิก + รับนักท่องเที่ยว |
 | **ทำเล** | นิมมานซอยใน (สิริมังคลาจารย์ / Nimman Soi 13, 17 / ห้วยแก้วซอยใน / สันติธรรม) |
-| **งบประมาณรวม** | 1,500,000 บาท |
+| **งบประมาณรวม** | **1,000,000 บาท** (ลดจาก 1.5M เนื่องจากข้อจำกัดเงินทุน) |
+| **โครงสร้างการเงิน** | Owner equity 200-300K + Bank loan 700-800K |
+| **ขนาดเริ่มต้น** | 3 เตียงนวด + 2 foot (ขยายเป็น 4 เตียงเมื่อ utilization >60%) |
 | **กลุ่มเป้าหมายหลัก** | นักท่องเที่ยวต่างชาติ (Western/จีน/เกาหลี) + ดิจิทัลโนแมด/expat long-stay |
 | **ประสบการณ์เจ้าของ** | 0 — ต้องวางระบบ + จ้าง manager มืออาชีพ + ฝึกอบรมเข้มข้น |
 | **Timeline** | เปิดร้านภายใน 6-12 เดือน |
@@ -151,106 +153,482 @@
 
 ---
 
-## Section 4: Financial Plan ✅
+## Section 4: Financial Plan v2 (1M Budget) ✅
 
-### CapEx (เงินลงทุนเริ่มต้น) — **รวม 1,500,000 บาท**
+### Scope Adjustment Rationale (1.5M → 1M)
+
+ลด **scope** ไม่ลด **คุณภาพ**:
+
+- เตียง 4 → **3** (เพิ่มภายหลังเมื่อ utilization >60%)
+- ขนาดร้าน 90-120 → **70-85 ตร.ม.** (เลือก layout ที่ขยายได้)
+- ค่าเช่าเป้า 32K → **26K** (ใช้ในการคำนวณ)
+- Working capital 339K (3 เดือน) → **220K (2 เดือน)** ⚠️ ความเสี่ยง
+
+**Decor + brand quality ไม่ลด** — เป็น core ของ premium positioning
+
+### CapEx v2 — รวม 1,000,000 บาท
 
 | รายการ | งบ (บาท) | หมายเหตุ |
 |---|---|---|
-| เงินมัดจำ + ล่วงหน้า | 96,000 | 3 เดือน (32K × 3) |
-| Renovation & Build-out | 320,000 | กั้นห้อง, ระบบไฟ/น้ำ/แอร์, ฝ้า, พื้น |
-| Decor & Finishing | 180,000 | ผ้าทอ, ทองเหลือง, แสง, ของตกแต่ง |
-| เตียงนวด + furniture | 140,000 | 4 เตียงคุณภาพดี (15-20K/เตียง) + เคาน์เตอร์ + ที่นั่ง |
-| อุปกรณ์สปา | 50,000 | เครื่องอบลูกประคบ, อุ่นน้ำมัน, หินร้อน, อ่างเท้า |
-| Linens (ผ้า) เริ่มต้น 3 ชุด | 65,000 | ผ้าปู ผ้าเช็ดตัว ชุดลูกค้า เสื้อพนักงาน |
-| Sound + scent system | 25,000 | ลำโพง zone, เครื่องอบกลิ่น |
-| POS + Booking system | 35,000 | iPad + Square/Loyverse + booking SaaS |
-| Signage + branding | 50,000 | ป้ายหน้าร้าน, logo, name card, packaging |
-| Initial inventory (3 เดือน) | 30,000 | น้ำมัน, สมุนไพร, ลูกประคบ, ชา, retail stock |
-| Launch marketing | 100,000 | photoshoot, Google Ads + Meta Ads + influencer |
-| License + permits + ฝึกอบรม | 70,000 | รายละเอียดใน Section 7 |
-| **Working capital reserve (3 เดือน OpEx)** | 339,000 | สำคัญที่สุด — ห้ามตัด |
-| **รวม** | **1,500,000** | |
+| เงินมัดจำ + ล่วงหน้า | 78,000 | 3 เดือน (26K × 3) |
+| Renovation & Build-out | 210,000 | partition 3 ห้อง, ไฟ/น้ำ/แอร์, ฝ้า, พื้น |
+| Decor & Finishing | 130,000 | source ตรงจากช่างล้านนา, DIY บางส่วน |
+| เตียงนวด + furniture | 95,000 | 3 เตียงคุณภาพดี + เคาน์เตอร์ + ที่นั่ง |
+| อุปกรณ์สปา | 35,000 | essentials เท่านั้น |
+| Linens (ผ้า) เริ่มต้น 2 ชุด | 40,000 | ผ้าปู ผ้าเช็ดตัว ชุดลูกค้า เสื้อพนักงาน |
+| Sound + scent system | 15,000 | basic, upgrade ภายหลัง |
+| POS + Booking system | 20,000 | iPad refurb + Loyverse free + booking SaaS |
+| Signage + branding | 30,000 | smaller initial signage |
+| Initial inventory | 22,000 | น้ำมัน, สมุนไพร, ลูกประคบ, ชา |
+| Launch marketing | 55,000 | DIY content + micro-influencer barter + photoshoot |
+| License + permits + ฝึกอบรม | 50,000 | รายละเอียดใน Section 7 |
+| **Working capital reserve (2 เดือน OpEx)** | 220,000 | ⚠️ ห้ามตัด — เสี่ยงสุดถ้าตัด |
+| **รวม** | **1,000,000** | |
 
-### OpEx (ค่าใช้จ่ายต่อเดือน) — ~165K/เดือน fixed
+### Funding Structure
+
+- **Owner equity**: 200-300K (20-30%)
+- **Bank loan**: 700-800K (70-80%)
+- ⚠️ Equity ratio ต่ำ → ต้องเตรียม pitch document ละเอียด + บสย. ค้ำประกัน
+
+### OpEx v2 — รวม ~149K/เดือน fixed (รวมหนี้)
 
 | รายการ | บาท/เดือน |
 |---|---|
-| ค่าเช่า | 32,000 |
-| Utilities (ไฟ+น้ำ+ก๊าซ) | 15,000 |
+| ค่าเช่า | 26,000 |
+| Utilities (ไฟ+น้ำ+ก๊าซ) | 12,000 |
 | Internet + booking SaaS + POS | 3,000 |
-| เงินเดือนฐาน (4 therapist + 1 receptionist + manager) | 75,000 |
+| เงินเดือนฐาน (3 therapist + 1 receptionist + manager) | 65,000 |
 | Therapist commission (~30% รายได้ treatment) | variable |
-| Consumables (น้ำมัน, สมุนไพร, ลูกประคบ, ชา, ผ้า) | 12,000 |
-| Marketing ongoing (ads + content) | 12,000 |
-| ประกัน + บัญชี + ภาษี local | 6,000 |
-| ซ่อมบำรุง + ค่าซักรีดส่งนอก | 5,000 |
-| Misc | 5,000 |
-| **Fixed OpEx รวม** | **~165,000** |
+| Consumables (น้ำมัน, สมุนไพร, ลูกประคบ, ชา, ผ้า) | 9,000 |
+| Marketing ongoing (ads + content) | 10,000 |
+| ประกัน + บัญชี + ภาษี local | 5,000 |
+| ซ่อมบำรุง + ค่าซักรีดส่งนอก | 4,000 |
+| Misc | 4,000 |
+| **Subtotal operating** | **138,000** |
+| **Loan repayment** (กู้ 750K @ 7%, 5 ปี) | **+11,000** |
+| **Fixed OpEx รวม** | **~149,000** |
 
 **โครงสร้างเงินเดือนพนักงานนวด** = ฐาน 8,000 + commission 30% ของรายได้ที่ตัวเองทำ → motivation สูง, cost variable
 
-### Revenue Model — Year 1 Projection
+### Revenue Model v2 — Year 1 Projection (3 เตียง)
 
-**กำลังการผลิต**: 4 เตียง × 12 ชม. × 30 วัน = 1,440 bed-hours/เดือน (max)
+**กำลังการผลิต**: 3 เตียง × 12 ชม. × 30 วัน = 1,080 bed-hours/เดือน (max)
 
-| เดือน | Util | Bed-hr ใช้ | Walk-in revenue | Members | Member revenue | **รวม** | กำไร/(ขาดทุน) |
-|---|---|---|---|---|---|---|---|
-| 1 (เปิด) | 12% | 173 | 95K | 5 | 18K | 113K | **-95K** |
-| 2 | 18% | 259 | 142K | 12 | 45K | 187K | -28K |
-| 3 | 25% | 360 | 200K | 22 | 85K | 285K | +30K |
-| 4 | 30% | 432 | 240K | 32 | 130K | 370K | +75K |
-| 5 | 35% | 504 | 280K | 42 | 175K | 455K | +130K |
-| 6 | 40% | 576 | 320K | 50 | 215K | 535K | +175K |
-| 7-9 | 45-50% | 650-720 | 360-400K | 60-70 | 270-310K | 630-710K | +250-310K |
-| 10-12 | 55-60% | 790-865 | 440-480K | 75-85 | 340-380K | 780-860K | +330-380K |
+| เดือน | Util | Walk-in | Members | Member rev | **รวม** | กำไร/(ขาดทุน) |
+|---|---|---|---|---|---|---|
+| 1 (เปิด) | 12% | 70K | 4 | 15K | 85K | -65K |
+| 2 | 18% | 105K | 10 | 38K | 143K | -25K |
+| 3 | 25% | 145K | 18 | 70K | 215K | +5K |
+| 4 | 30% | 175K | 25 | 100K | 275K | +50K |
+| 5 | 35% | 205K | 32 | 130K | 335K | +90K |
+| 6 | 40% | 230K | 40 | 165K | 395K | +130K |
+| 7-9 | 45-50% | 270-300K | 48-58 | 200-250K | 470-550K | +180K-240K |
+| 10-12 | 55-60% | 320-345K | 60-70 | 260-300K | 580-645K | +260K-300K |
 
 **สมมติฐาน**:
+
 - Walk-in average ticket = 550 บาท/ชม. blended
 - Members visit avg 4-5 ครั้ง/เดือน
-- Conservative: หาร 0.7 จากตัวเลขข้างบน
+- Conservative: หาร 0.7
 - Optimistic: คูณ 1.2
 
-### Break-Even Analysis
-- **Fixed cost**: ~120K/เดือน (rent + base salary + utilities + marketing + misc)
+### Break-Even v2
+
+- **Fixed cost**: ~120K/เดือน (รวม loan)
 - **Variable cost**: ~40% ของรายได้
 - **Break-even revenue**: 120K ÷ (1-0.4) = **200K/เดือน**
-- **Expected break-even month**: เดือน 3-4 (base case)
+- **Expected break-even month**: **เดือน 3-4** (base case)
 
-### Cash Burn Risk
-- เดือน 1-2 ขาดทุนรวม ~125K → ใช้ working capital 339K → buffer เหลือ 214K
-- หาก ramp-up ช้ากว่าคาด 50% → buffer ครอบคลุมถึงเดือน 5-6
-- 🚨 **Red flag**: ถ้าเดือน 4 ยังขาดทุน → ต้อง pivot ทันที (ราคา/marketing/staffing)
+### Cash Burn Risk v2 (สำคัญสุด)
 
-### Year 1 Summary (Base Case)
-- รายได้ 12 เดือน: ~5.2M บาท
-- กำไรสุทธิ: ~1.6M (margin 30%)
-- Payback period: ~14-18 เดือนนับจากเปิด
+- เดือน 1-2 ขาดทุนรวม ~90K → ใช้ working capital 220K → เหลือ 130K
+- ถ้า ramp-up ช้า 30% → buffer หมดเดือน 4-5
+- 🚨 **Plan B จำเป็น**: หาก break-even เลื่อนถึงเดือน 6 → ต้องเตรียมเงินสำรอง 100K (วงเงินเสริม ออมสิน หรือ family loan)
 
----
+### Year 1 Summary v2 (Base Case)
 
-## Section 5: Operations & Staffing — ⏳ TODO
-
-หัวข้อที่จะลงรายละเอียด:
-- Org chart (manager, therapists, receptionist, freelance pool)
-- Recruitment strategy (เจ้าของยังไม่มี exp → ต้อง manager มืออาชีพ)
-- Therapist sourcing & screening (วิทยาลัยอาชีวะแพทย์แผนไทย, freelance pool, แลกเปลี่ยนกับร้านอื่น)
-- Training program (Lanna techniques, hospitality English, SOP)
-- Operating hours, shift structure
-- SOP key items: customer journey, hygiene, safety, refund/complaint
+- รายได้ 12 เดือน: ~3.8M บาท
+- กำไรสุทธิ: ~1.0M (margin 26%)
+- Payback period: ~16-20 เดือนนับจากเปิด
 
 ---
 
-## Section 6: Marketing & Customer Acquisition — ⏳ TODO
+## Section 4.5: Loan Strategy & Bank Pitch ✅
 
-หัวข้อที่จะลงรายละเอียด:
-- Pre-launch (3-6 เดือนก่อนเปิด): Instagram seed, photoshoot, soft community
-- Launch month: Google My Business setup, Klook/Viator listing, opening event
-- Ongoing channels priority: Google Maps SEO > Instagram > partnerships > paid ads
-- Partnership targets: Punspace, Yellow coworking, boutique hotels, condo concierge
-- Content strategy + budget breakdown
-- Membership conversion funnel
-- Referral / loyalty mechanics
+### Loan Options (เรียงตาม priority)
+
+| ตัวเลือก | วงเงิน | ดอก/ปี | เหมาะยังไง |
+|---|---|---|---|
+| ⭐ **ออมสิน "GSB-IGNITE / SMEs Start-up"** | สูงสุด 1M | 5-7% | กลุ่มเป้าหมายตรง — SME มือใหม่ ผ่อน 5-7 ปี |
+| **กรุงไทย SME D-MoneyConnect** | สูงสุด 1.5M | 6-7.5% | รัฐหนุน ใช้ บสย. ค้ำได้ |
+| **กสิกร K-SME** | สูงสุด 5M | 7-9% | ดอกสูงกว่า อนุมัติเร็วถ้า documents ครบ |
+| **บสย. (Thai Credit Guarantee)** | ค้ำให้แบงก์ | - | สมัครคู่กับแบงก์ ถ้าไม่มีหลักประกัน |
+| **ครอบครัว/เพื่อน** | flexible | 0-3% | ปลอดภัยสุด ถ้าได้ |
+
+### Bank Pitch Document (15 ส่วน — ใช้ business plan นี้เป็น core)
+
+1. Cover page: ชื่อโครงการ + เจ้าของ + วงเงินที่ขอ + จุดประสงค์
+2. Executive Summary (1 หน้า): concept + ทำเล + วงเงิน + แผนชำระคืน
+3. เจ้าของ + ทีม: resume + manager profile (ถ้ามีแล้ว = แม่เหล็ก)
+4. Market analysis: ตลาดสปาเชียงใหม่ มูลค่า, การเติบโต (TAT, TCEB stats)
+5. Competitive analysis: เทียบ 5-7 ร้านในรัศมี 1km, จุดต่าง
+6. Marketing plan: ช่องทาง, budget, ramp-up
+7. Operations: org, SOP, hours
+8. Financial projection 3 ปี: P&L + cash flow + balance sheet
+9. Sensitivity analysis: scenario base/conservative/optimistic
+10. Loan repayment plan: กี่งวด, ดอกเบี้ย, DSCR
+11. Use of funds: CapEx breakdown ละเอียด + ใบเสนอราคา vendors
+12. Owner equity: หลักฐานเงินตัวเอง (statement bank 6 เดือน)
+13. Collateral / guarantee: หลักประกัน หรือ บสย. application
+14. Risk + mitigation: scenario เลวร้าย + แผนรับมือ
+15. Appendix: ใบอนุญาต, MOU/LOI partners, photos ทำเล
+
+### DSCR (ตัวเลขที่แบงก์เช็คเป็นหลัก)
+
+DSCR = กำไรก่อนหนี้ / ค่าผ่อนงวดนั้น (ต้องไม่ต่ำกว่า 1.2 ดี = 1.5+)
+
+- เดือน 6: กำไร 130K / ผ่อน 11K = **DSCR 11.8** ⭐ ดีมาก
+- เดือน 3: กำไร 5K / ผ่อน 11K = **DSCR 0.45** ❌ → **ขอ grace period 3-6 เดือนแรก** (ผ่อนแค่ดอก)
+- 🔑 Tactic สำคัญ: **เจรจา grace period 3-6 เดือนกับธนาคาร** — common และให้บ่อยสำหรับ SME มือใหม่
+
+### Pre-pitch Checklist (ก่อนยื่นแบงก์)
+
+- [ ] เอกสารส่วนตัว: บัตร ปชช., ทะเบียนบ้าน, statement bank 6 เดือน, ใบรับรองรายได้
+- [ ] นิติบุคคล: หนังสือรับรองบริษัท (ต้องจดก่อน), หนังสือรับรองตราประทับ
+- [ ] Business plan ฉบับสมบูรณ์ (เอกสารนี้ + financials Excel)
+- [ ] ใบเสนอราคาจาก vendor (renovation, equipment) — ขั้นต่ำ 3 เจ้าต่อรายการ
+- [ ] LOI/MOU จาก partner (coworking, hotel) — ถ้าได้ขั้นต่ำ 2-3 เจ้า = ดูจริงจัง
+- [ ] หลักประกัน หรือ บสย. application
+- [ ] เปิดบัญชีธนาคารใหม่ในนามบริษัท (เตรียมไว้รับเงินกู้)
+
+---
+
+## Section 5: Operations & Staffing ✅
+
+### Org Chart
+
+```
+Owner (you — 0 exp, focus: strategy + finance + key decisions)
+└── Spa Manager ⭐ CRITICAL HIRE (30-40K + 5-10% net profit bonus)
+    ├── Senior Therapist / Lead (1) — quality control + training (12K + commission 35%)
+    ├── Therapist (2) — direct service (8K + commission 30%)
+    └── Receptionist (1) — booking, customer-facing, member sales (14-18K + 10% comm. on memberships)
+
+Outsourced:
+- Cleaner / Laundry (~6K/mo, daily 2hr)
+- Accountant (~3K/mo, monthly visit)
+- IT/Booking system (SaaS subscription)
+```
+
+**Total full-time core team**: 5 people
+
+### CRITICAL: Spa Manager (จุดชี้เป็นชี้ตาย)
+
+เจ้าของ exp = 0 → **manager คือสมองของธุรกิจ** ห้ามประหยัด ห้ามจ้างคนไม่มี exp
+
+**Profile ที่ต้องการ:**
+
+- 5+ ปีในวงการสปา/wellness ระดับ premium
+- เคยเป็น manager หรือ senior supervisor (ไม่ใช่แค่ therapist)
+- พูดอังกฤษได้ใช้งาน (ลูกค้าหลักเป็นต่างชาติ)
+- มี network therapist + supplier
+- เข้าใจกฎ สบส. + employment law
+- Personality: ใจเย็น, leader, customer-centric
+
+**Where to find:**
+
+- LinkedIn (search "Spa Manager Chiang Mai")
+- Poach จากโรงแรม chain (Anantara, Akyra, Le Meridien spa staff)
+- JobsDB / JobThai with premium criteria
+- Spa industry association (Thai Spa Association)
+- Headhunter agency (ค่าธรรมเนียม 1-2 เดือนเงินเดือน — คุ้มถ้าได้คนดี)
+
+**Compensation structure:**
+
+- Base 30-40K/เดือน
+- 5-10% of net monthly profit as bonus (alignment incentive)
+- Free 1 massage/week
+- ProBation 3 เดือน
+- ⚠️ ใส่ **non-compete clause** ในสัญญา (1 ปีหลังลาออก ห้ามทำงานร้านนวดในรัศมี 2km)
+
+### Therapist Recruitment
+
+**Sources (เรียง priority):**
+
+1. **โรงเรียนนวดเฉพาะ** — Wat Pho cert, ITM Chiang Mai, Lanna Massage School (Wat Phra Sing)
+   - Tactic: เซ็น MOU กับโรงเรียน → จองสิทธิ์ recruit fresh grads อันดับแรก
+2. **Freelance pool** — Facebook กลุ่ม "หานวดเชียงใหม่", "นักนวดรับงาน CM" — ใช้ช่วง peak season
+3. **Poach จากร้านอื่น** — เสี่ยงสูง ใช้ระวัง (เซ็น non-compete ของเขาแน่หรือไม่)
+4. **Government training** — กรมพัฒนาฝีมือแรงงาน เชียงใหม่ มีหลักสูตรนวด → graduates หางาน
+
+**Hiring process:**
+
+1. Resume screen (ใบประกาศ + ประสบการณ์)
+2. Trial massage (1 ชม. นวดให้ manager หรือ senior — เช็ค technique)
+3. Personality interview (40 นาที — ภาษา, attitude, customer scenarios)
+4. Background check (ตำรวจ + references จากนายจ้างเก่า)
+5. Probation 3 เดือน
+6. ✅ Offer
+
+**Initial team (เปิดร้าน):** 4 therapists (1 senior + 3 regular) + backup pool 2-3 freelance
+
+### Training Program (2-3 สัปดาห์ก่อนเปิด)
+
+| Day | หัวข้อ | ใคร |
+|---|---|---|
+| 1 | Brand & Concept (ทำไม premium, ใครคือลูกค้า, brand promise) | Owner + Manager |
+| 2-7 | Lanna Techniques (signature moves, ลูกประคบ, oil) | Senior Therapist + guest trainer |
+| 8-9 | SOP Walkthrough (customer journey 9 steps, hygiene, safety) | Manager |
+| 10-11 | Hospitality (English vocab, Thai etiquette, body language) | English coach |
+| 12 | Soft skills (objection handling, complaint, upsell membership) | Manager |
+| 13 | Mock service (full dry-run with friends/family as customers) | All |
+| 14 | Refresher + final QA | Manager + Owner |
+
+**Ongoing training**: 2 ชม./เดือน + quarterly skill assessment
+
+### Operating Hours & Shift Structure
+
+- **Hours**: 10:00 - 22:00 (12 ชม.) 7 วัน/สัปดาห์
+- **Last booking**: 21:00 (60min) / 20:30 (90min) / 19:30 (150min combo)
+- **Closed**: only major holidays (Songkran 1 day + NY Day) — เปิดสู้คู่แข่ง
+
+**Shift pattern:**
+
+- Morning shift: 10:00-18:00 (8hr)
+- Evening shift: 14:00-22:00 (8hr)
+- Overlap 14:00-18:00 = peak coverage
+- Each therapist: 6 days/week, 1 day off rotating
+- Receptionist: 2 คน rotation cover 10-22
+
+### SOP — 9-Step Customer Journey
+
+1. **Greeting** — receptionist สวัสดี, น้ำสมุนไพร/ผ้าเย็น, name + welcome
+2. **Consultation** — sheet 5 questions (problem, allergy, pressure, focus, contraindication)
+3. **Tour** — บอกห้องน้ำ, locker, ห้องนวด, ระยะเวลา
+4. **Preparation** — เปลี่ยนเสื้อ, ล้างเท้า, นำเข้าห้อง
+5. **Service** — therapist อธิบาย flow, ตรวจ pressure 5min, ทำ technique
+6. **Closure** — ค่อยๆ ปลุก, น้ำสมุนไพร, ผ้าเช็ดหน้า, นั่งพัก 5min
+7. **Upsell** — receptionist เสนอ membership/package (script ห้าม pushy)
+8. **Checkout** — pay, name card, loyalty stamp
+9. **Follow-up** — Day 1: thank you + ขอ Google review (link), Day 7: check-in + book next
+
+### SOP — Hygiene (ห้ามต่อรอง)
+
+- ผ้าทุกชิ้นใช้ 1 ครั้งแล้วซัก (ไม่มีข้อยกเว้น)
+- ห้องน้ำเช็ดทุกชั่วโมง (logbook)
+- เตียงเช็ด anti-bacterial ทุกครั้งหลังลูกค้า
+- น้ำมันเปลี่ยนทุก 7 วัน
+- ลูกประคบใช้ครั้งเดียวแล้วทิ้ง (ห้าม reuse — เรื่องสุขภาพ)
+- พนักงาน wash hands ก่อนทุก service + ใส่ถุงเท้า/รองเท้าเฉพาะในร้าน
+- ตรวจสุขภาพพนักงาน 6 เดือน/ครั้ง (กฎ สบส.)
+
+### SOP — Safety
+
+- **Contraindication checklist** ทุกลูกค้า: โรคประจำตัว, ตั้งครรภ์ <12 wks (ห้าม), ผ่าตัด <30 days (ห้าม), ความดัน, ไข้, ผิวหนัง
+- First-aid kit ครบ + ฝึก CPR ทุกคน
+- Emergency contact: รพ.มหาราช (ใกล้สุด)
+- Insurance claim process — manager handle
+
+### SOP — Complaint Handling
+
+1. Listen full ไม่แก้ตัว (อย่างน้อย 2 นาที)
+2. Empathy: "ขออภัยที่ทำให้คุณรู้สึกแบบนี้"
+3. ขอข้อมูลเพิ่ม
+4. แก้ทันที: refund 100% ภายใน 24hr / re-do ฟรี / discount voucher
+5. Manager log ทุกเคส → analyze pattern monthly meeting
+
+### Refund Policy — "100% Satisfaction Guarantee"
+
+- ภายใน 24hr ถ้าไม่พอใจ refund หรือ free re-service
+- เป็น marketing tool ในตัว → confidence builder
+- จริงๆ ใช้ <2% ของลูกค้า → cost น้อยกว่ากำไรที่ได้จาก trust
+
+### Membership Sales Script (key principles)
+
+- **ห้าม pushy** — ขายเฉพาะหลังลูกค้า experience ดี
+- Frame as "ประหยัด" + "convenience" ไม่ใช่ "ขาย"
+- Soft close script: *"ถ้าคุณวางแผนกลับมาภายใน 30 วัน Pro tier ประหยัดกว่า 30% ลองเริ่ม 1 เดือนดู ยกเลิกได้ตลอดไม่ผูกมัด"*
+- Receptionist commission 10% ของ membership sold = motivation แต่ไม่จนถึงขั้น oversell
+
+---
+
+## Section 6: Marketing & Customer Acquisition ✅
+
+### Pre-Launch Phase (เดือน -3 ถึง -1)
+
+**เดือน -3: Brand Foundation**
+
+- Logo + brand guideline (designer freelance ~10K)
+- Landing page (Wix/Squarespace + booking widget) ~2K/mo
+- Instagram + Facebook account ตั้งใหม่
+- Google Business Profile registered (ก่อนเปิดได้)
+- LINE OA setup
+
+**เดือน -3 ถึง -1: Content Seeding**
+
+- Instagram post ทุกวัน — Lanna inspiration, decor process, signature scent making, "behind the scenes"
+- Goal: 30+ posts + 100+ stories ก่อนเปิด → ทำให้ดู established
+- Hashtags strategy: #ChiangMaiSpa #LannaMassage #NimmanSpa #ChiangMaiWellness
+
+**เดือน -1: Photoshoot (1 day, 2 sessions)**
+
+- Session 1: ร้านเปล่า + decor + treatment rooms (lifestyle + interior)
+- Session 2: Treatments in action (real models, signature techniques)
+- Output: 50-80 hero shots + 100+ stories shots + video b-roll
+- Budget: 15-20K (one-time, ใน CapEx launch marketing)
+
+**เดือน -1: Soft Community Building**
+
+- เชิญ 30-50 คน จาก nomad/expat groups (Facebook "Chiang Mai Digital Nomads", "Chiang Mai Expats Club", coworking communities) มา **free preview**
+- แลก: honest review + photo permission
+- เก็บ Google reviews ก่อน opening day target: **20-30 reviews**
+- เก็บ Instagram tags + UGC
+
+**เดือน -1: Listings**
+
+- Google Business Profile (full setup: photos, hours, services, FAQ)
+- Klook / Viator / Treatwell — apply
+- TripAdvisor — claim listing
+- Booking.com Wellness — apply
+
+### Launch Month (Month 0)
+
+**Grand Opening Event** (Friday evening, invite-only):
+
+- 50-80 invitees: nomad/expat community, micro-influencers, hotel concierges, partners
+- ของในงาน: signature drink + bites + free 15min mini massage + photo booth
+- Budget: 25-30K
+- Goal: 30+ posts shared on social, 10+ press mentions
+
+**Press Push:**
+
+- Chiang Mai Citylife (English magazine) — feature article
+- Citylocating, Marrymag — short feature
+- TAT Chiang Mai office — submit for tourism listing
+
+**Influencer Collab** (5-8 micro-influencers, 1K-10K followers):
+
+- Barter: free spa for content (3 stories + 1 reel + 1 post)
+- Choose: Chiang Mai-based wellness/lifestyle/expat creators
+- Avoid: pure massage-review accounts (looks paid, low trust)
+
+**Klook/Viator Launch:**
+
+- List 3-5 packages
+- Aggressive pricing first 30 days (-15% intro)
+- Goal: 50+ Klook bookings = quick review velocity on platform
+
+### Ongoing Channels (Priority Order)
+
+**1. Google Maps SEO** ⭐⭐⭐ (most important, free)
+
+- Rule: 50+ reviews 4.8+ stars by month 3
+- ASK every customer for review (script + QR card)
+- Respond to ALL reviews within 24hr (positive AND negative)
+- Upload photos weekly
+- Google Posts weekly (offers, blog snippets)
+- Pre-fill 5-10 common Q&A
+
+**2. Instagram** (brand & nomad community)
+
+- Posts: 3-4/wk
+- Stories: daily
+- Reels: 2/wk (treatments, customer testimonials, Lanna culture)
+- DM bookings enabled
+- Hashtags + geotags optimized
+
+**3. Partnership Network** (highest ROI, low cost)
+
+- **Coworking spaces** (cross-promo membership discount 20%):
+  - Punspace (Nimman + Tha Phae)
+  - Yellow Coworking
+  - The Brick X41
+  - CAMP @ MAYA
+- **Boutique hotels** (15% commission to concierge):
+  - Akyra Manor, Anantara, U Nimman, Yaang Come, Hotel Akhom
+  - Approach: walk-in with rate card + voucher samples
+- **Condo concierges**: Hillside, The Astra, Nimman 11 — voucher exchange
+- **Gyms / Yoga**: Yoga Tree, Wild Rose Yoga, BASE, Tony Jaa Gym — cross-promo
+- **Retreats**: Mantra, Spirit Pavilion, Avadana — wellness package partnership
+
+**4. TikTok** (if bandwidth)
+
+- 1-2 videos/wk
+- Content: POV Lanna massage, behind-the-scenes, Lanna culture explained, before/after office syndrome stretching
+- Higher viral potential than IG
+
+**5. Paid Ads** (start month 4 after organic baseline)
+
+- Meta (FB/IG): geo-target Chiang Mai 0-15km, English-speaking expats + Thai 25-50, budget 5-8K/mo
+- Google Ads: keywords "Chiang Mai spa", "best massage Nimman", "Lanna massage", budget 3-5K/mo
+- Retargeting: site visitors + IG profile visitors
+
+**6. Klook/Viator/GetYourGuide** (commission 20-25%)
+
+- Keep listing ON (not aggressive)
+- Tourist acquisition baseline
+- Optimize photos/copy for ranking
+
+**7. LINE OA** (Thai/repeat customers)
+
+- Broadcast 2/month: offers + tips
+- Auto-reply for booking
+- LINE points loyalty
+
+**8. Email Newsletter** (members only)
+
+- Monthly: tips, Lanna culture, member-only offers
+- Birthday voucher
+- Win-back lapsed members
+
+### Content Strategy
+
+**4 Content Pillars (rotate):**
+
+1. **Lanna Culture** — herbs explained, traditions, history (educates + builds authority)
+2. **Wellness Tips** — office syndrome stretches, sleep, posture (helpful + shareable)
+3. **Behind-the-scenes** — decor, herb sourcing, staff stories (humanizes)
+4. **Customer Stories** — testimonials, before/after (social proof)
+
+**Tone**: warm, knowledgeable, slightly poetic — not gimmicky
+**Languages**: English primary + Thai secondary (subtitles for accessibility)
+
+### Membership Conversion Funnel
+
+- Walk-in → great experience → receptionist soft-offer "First-month try at 1,800 (vs 4,500)" → ใช้ 4 ครั้งใน 30 วัน → auto-renew at full price
+- Or: 3-visit punch card free → if used in 60 days, member offer
+- **Goal**: 25-30% of repeat walk-in convert to member
+- **Retention target**: 85%/month (15% churn ok)
+
+### Referral Program
+
+- Member brings friend → friend 30% off first visit + member 1 free 60min added
+- Track via referral code in booking system
+- **Goal**: 20% of new members from referrals by month 6
+
+### Marketing Budget (Steady State, after Month 3)
+
+| รายการ | บาท/เดือน |
+|---|---|
+| Content/photo (DIY + 1 monthly photoshoot) | 5,000 |
+| Paid ads (Meta + Google) | 8,000 |
+| Influencer rotation | 3,000 |
+| Klook commissions | variable (~5-8% of Klook revenue) |
+| **Total ongoing** | **~16-20K/month** |
+
+⚠️ **Budget OpEx 10K** ตั้งไว้ แต่ realistic 16-20K → adjust upward by month 4 จาก cashflow
+
+### Key Marketing Metrics Dashboard (review weekly)
+
+- Bookings count + revenue
+- Utilization rate (bed-hours used / available)
+- Avg ticket
+- Member acquisition (new + churn)
+- Google review count + rating
+- Source mix (walk-in / Google / IG / Klook / partner)
+- Cost per acquisition (marketing spend / new customer)
+- Lifetime value (avg revenue / customer over 6 months)
 
 ---
 
@@ -298,31 +676,38 @@
 ## Open Questions / Pending Decisions
 
 - [ ] ชื่อร้านตัวจริง (working: Khum Lanna Spa)
-- [ ] ตัวเลข member 80 คนเดือน 12 — confirm aggressive/conservative?
-- [ ] โครงสร้าง commission พนักงาน — ยืนยันที่ 30%?
-- [ ] Section 5-9 ยังไม่ได้ลงรายละเอียด
+- [ ] วงเงินกู้ที่ขอแน่นอน (700K vs 800K — ขึ้นกับ equity ที่ลงได้)
+- [ ] เลือกธนาคารไหน (ออมสิน vs กรุงไทย) → ต้องไป consult เจ้าหน้าที่
+- [ ] หา manager ตัวจริง (ตัดสินผ่าน probation 3 เดือน)
+- [ ] Section 7-9 ยังไม่ได้ลงรายละเอียด (Legal, Risks, Roadmap)
 
 ---
 
 ## Conversation Context (สำหรับ pick up รอบหน้า)
 
 **ลำดับการตัดสินใจที่ทำไปแล้ว:**
+
 1. ประเภทร้าน → นวดไทย + Day Spa
-2. งบ → 500K-1.5M (ลงไป 1.5M)
+2. งบเริ่มแรก → 500K-1.5M (เลือก 1.5M)
 3. ทำเล (รอบ 1) → จังหวัดเชียงใหม่ตัวเมือง
 4. กลุ่มลูกค้า → นักท่องเที่ยวต่างชาติ + ดิจิทัลโนแมด
 5. ประสบการณ์ → 0 (ต้องระวังความเสี่ยง)
 6. Timeline → 6-12 เดือน
-7. Concept (รอบ 1) → Nimman Wellness Studio (แนะนำ) แต่ user "ผสม"
-8. Concept (final) → Lanna luxury + membership + tourists welcome
-9. ทำเล (final) → นิมมานซอยใน (หลังเปรียบเทียบลึก)
-10. Section 1-2 (Concept + Menu) → approved → ไปต่อ
-11. Section 3-4 (Location + Financial) → presented → user ขอ save ก่อนกินข้าว
+7. Concept (final) → Lanna luxury + membership + tourists welcome
+8. ทำเล (final) → นิมมานซอยใน
+9. Section 1-2 (Concept + Menu) → approved
+10. Section 3 (Location) → approved
+11. **งบปรับ → 1M (equity 200-300K + loan 700-800K)** ← critical change
+12. Section 4 (Financial v2) + 4.5 (Loan strategy) → revised + approved
+13. Section 5 (Operations & Staffing) + 6 (Marketing) → completed
 
 **ขั้นต่อไปเมื่อกลับมา:**
-- ขอ feedback Section 3-4 (CapEx ละเอียดพอไหม, member 80 คนเหมาะไหม, commission 30% โอเคไหม)
-- ถ้าผ่าน → ลงไป Section 5 (Operations & Staffing) + Section 6 (Marketing)
-- จากนั้น Section 7 (Legal — สำคัญมากเพราะมือใหม่) + Section 8 (Risks) + Section 9 (Roadmap)
-- จบแล้ว spec self-review + user final review → invoke writing-plans skill เพื่อทำ implementation plan
+
+- Section 7 (Legal & Permits) — สำคัญมาก: ใบ สบส., ใบดำเนินการสปา, นิติบุคคล, ภาษี, แรงงาน, ประกัน
+- Section 8 (Risks & Mitigations) — market risk, staff risk, financial risk, ops, regulatory
+- Section 9 (12-month Phased Roadmap) — เดือน -6 ถึง 12
+- จบ spec → self-review → user final review → invoke writing-plans skill
+
+**สถานะ skill workflow**: `superpowers:brainstorming` ยังอยู่ใน "Present design sections" phase
 
 **Skill workflow ที่ใช้อยู่:** `superpowers:brainstorming` (ยังอยู่ใน phase "Present design sections" — task #4)
