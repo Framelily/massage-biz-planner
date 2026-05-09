@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#3a302a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Khum Lanna Spa — Business Plan</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+
+<style>
+:root {
+  --bg: #f5ede0;
+  --bg-card: #ffffff;
+  --bg-sidebar: #2a2420;
+  --text: #2c241f;
+  --text-muted: #6b5d52;
+  --text-sidebar: #d8c9b6;
+  --text-sidebar-active: #f5ede0;
+  --gold: #b8935a;
+  --gold-dark: #8c6e3f;
+  --accent: #c5a572;
+  --border: #e0d4c0;
+  --code-bg: #f0e7d6;
+  --table-stripe: #faf5ec;
+  --shadow: 0 2px 12px rgba(58, 48, 42, 0.08);
+  --shadow-lg: 0 8px 24px rgba(58, 48, 42, 0.15);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: 'Sarabun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* Mobile header (always visible, fixed) */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: var(--bg-sidebar);
+  color: var(--text-sidebar-active);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+
+.topbar h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 12px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topbar .gold-accent {
+  color: var(--accent);
+}
+
+.menu-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text-sidebar-active);
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.menu-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menu-toggle svg { width: 24px; height: 24px; }
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  background: var(--bg-sidebar);
+  color: var(--text-sidebar);
+  padding: 24px 0;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease-out;
+  z-index: 90;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sidebar.open { transform: translateX(0); }
+
+.sidebar h2 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--gold);
+  padding: 0 24px;
+  margin-bottom: 12px;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.sidebar h2:first-child { margin-top: 0; }
+
+.doc-list { list-style: none; margin-bottom: 24px; }
+
+.doc-link {
+  display: block;
+  padding: 14px 24px;
+  color: var(--text-sidebar);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  border-left: 3px solid transparent;
+  transition: all 0.15s;
+}
+
+.doc-link:hover {
+  background: rgba(184, 147, 90, 0.1);
+  color: var(--text-sidebar-active);
+}
+
+.doc-link.active {
+  background: rgba(184, 147, 90, 0.15);
+  color: var(--text-sidebar-active);
+  border-left-color: var(--gold);
+  font-weight: 500;
+}
+
+.doc-link .doc-meta {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  font-weight: 300;
+}
+
+.doc-link.active .doc-meta { color: var(--accent); }
+
+/* TOC inside sidebar */
+.toc {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 16px;
+  margin: 0 16px;
+}
+
+.toc-list { list-style: none; }
+
+.toc-list a {
+  display: block;
+  padding: 6px 8px;
+  color: var(--text-sidebar);
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.4;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  opacity: 0.85;
+}
+
+.toc-list a:hover {
+  background: rgba(184, 147, 90, 0.1);
+  opacity: 1;
+}
+
+.toc-list .toc-h2 { padding-left: 8px; font-weight: 500; }
+.toc-list .toc-h3 { padding-left: 20px; opacity: 0.75; }
+.toc-list .toc-h4 { padding-left: 32px; opacity: 0.65; font-size: 12px; }
+
+/* Backdrop */
+.backdrop {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 80;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.backdrop.show { opacity: 1; pointer-events: auto; }
+
+/* Main content */
+.content {
+  padding: 80px 16px 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.content.loading { opacity: 0.4; pointer-events: none; }
+
+/* Markdown styles */
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+  font-family: 'Playfair Display', 'Sarabun', serif;
+  color: var(--text);
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+  line-height: 1.3;
+  scroll-margin-top: 70px;
+}
+
+.markdown h1 {
+  font-size: 28px;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 12px;
+  margin-top: 0;
+  color: var(--gold-dark);
+}
+
+.markdown h2 {
+  font-size: 22px;
+  color: var(--gold-dark);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.markdown h3 {
+  font-size: 18px;
+  color: var(--text);
+}
+
+.markdown h4 { font-size: 16px; font-weight: 600; }
+
+.markdown p {
+  margin-bottom: 1em;
+  line-height: 1.75;
+}
+
+.markdown a {
+  color: var(--gold-dark);
+  text-decoration: underline;
+  text-decoration-color: rgba(140, 110, 63, 0.3);
+  text-underline-offset: 3px;
+}
+
+.markdown a:hover { text-decoration-color: var(--gold-dark); }
+
+.markdown strong { color: var(--text); font-weight: 600; }
+
+.markdown em { color: var(--text-muted); }
+
+.markdown ul, .markdown ol {
+  margin-bottom: 1em;
+  padding-left: 24px;
+}
+
+.markdown li {
+  margin-bottom: 6px;
+  line-height: 1.7;
+}
+
+.markdown li > ul, .markdown li > ol { margin-top: 6px; margin-bottom: 6px; }
+
+/* Checkbox lists (task lists) */
+.markdown li input[type="checkbox"] {
+  margin-right: 8px;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--gold);
+}
+
+.markdown blockquote {
+  border-left: 4px solid var(--gold);
+  padding: 12px 16px;
+  margin: 1em 0;
+  background: var(--bg-card);
+  color: var(--text-muted);
+  border-radius: 0 6px 6px 0;
+  box-shadow: var(--shadow);
+}
+
+.markdown blockquote p:last-child { margin-bottom: 0; }
+
+.markdown code {
+  background: var(--code-bg);
+  color: var(--gold-dark);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'SF Mono', Consolas, Monaco, monospace;
+  font-size: 0.9em;
+  word-break: break-word;
+}
+
+.markdown pre {
+  background: var(--bg-sidebar);
+  color: var(--text-sidebar-active);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1em 0;
+  font-size: 13px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.markdown pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font-size: inherit;
+}
+
+.markdown hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border), transparent);
+  margin: 2em 0;
+}
+
+/* Tables — responsive scroll on mobile */
+.markdown table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  background: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  font-size: 14px;
+  display: table;
+}
+
+.markdown .table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1em -16px;
+  padding: 0 16px;
+}
+
+.markdown th, .markdown td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.markdown th {
+  background: var(--code-bg);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.markdown tbody tr:nth-child(even) { background: var(--table-stripe); }
+
+.markdown tbody tr:last-child td { border-bottom: none; }
+
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Hero on home/welcome */
+.welcome {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.welcome-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: var(--gold-dark);
+  margin-bottom: 8px;
+}
+
+.welcome-tagline {
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.welcome-doc-card {
+  display: block;
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: var(--shadow);
+  transition: all 0.15s;
+  border-left: 4px solid var(--gold);
+  text-align: left;
+}
+
+.welcome-doc-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.welcome-doc-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--gold-dark);
+  margin-bottom: 4px;
+}
+
+.welcome-doc-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Loading state */
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  color: var(--text-muted);
+}
+
+.loading-spinner::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--border);
+  border-top-color: var(--gold);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin-left: 12px;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Back to top button */
+.back-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.back-top.show { opacity: 1; pointer-events: auto; }
+
+.back-top svg { width: 20px; height: 20px; }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 24px 16px;
+  color: var(--text-muted);
+  font-size: 13px;
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+}
+
+/* Desktop layout */
+@media (min-width: 900px) {
+  .menu-toggle { display: none; }
+
+  .sidebar {
+    transform: translateX(0);
+    width: 300px;
+    box-shadow: var(--shadow);
+  }
+
+  .backdrop { display: none; }
+
+  .content {
+    margin-left: 300px;
+    padding: 80px 48px 80px;
+    max-width: none;
+  }
+
+  .content > .markdown { max-width: 760px; margin: 0 auto; }
+
+  .topbar h1 { margin-left: 0; }
+}
+
+/* Print */
+@media print {
+  .topbar, .sidebar, .backdrop, .back-top, .footer { display: none !important; }
+  .content { padding: 0; margin: 0; max-width: none; }
+  .markdown a { color: var(--text); text-decoration: none; }
+  .markdown pre, .markdown code { background: #f5f5f5; color: black; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <button class="menu-toggle" id="menuToggle" aria-label="เมนู">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+  </button>
+  <h1>Khum Lanna <span class="gold-accent">·</span> <span id="topTitle">Business Plan</span></h1>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <h2>เอกสาร</h2>
+  <ul class="doc-list" id="docList"></ul>
+  <h2>สารบัญ</h2>
+  <nav class="toc" id="toc"><div style="padding: 0 8px; font-size: 13px; opacity: 0.6;">เลือกเอกสาร</div></nav>
+</aside>
+
+<div class="backdrop" id="backdrop"></div>
+
+<main class="content" id="content">
+  <div class="welcome">
+    <div class="welcome-logo">Khum Lanna Spa</div>
+    <div class="welcome-tagline">Boutique Lanna Wellness · Nimman, Chiang Mai</div>
+    <div id="welcomeCards"></div>
+  </div>
+</main>
+
+<button class="back-top" id="backTop" aria-label="กลับขึ้นบน">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l8 8h-5v8h-6v-8H4z"/></svg>
+</button>
+
+<footer class="footer">
+  <div>📋 เอกสารแผนธุรกิจ ขุมล้านนาสปา</div>
+  <div style="margin-top: 4px;">อัปเดตล่าสุด: <span id="buildDate"></span></div>
+</footer>
+
+<script>
+const DOCS = [
+  {
+    id: 'spec',
+    title: 'แผนธุรกิจ (Design Spec)',
+    meta: '9 หัวข้อ · concept ถึง roadmap',
+    path: 'superpowers/specs/2026-05-09-massage-shop-business-plan-design.md',
+    description: 'แผนธุรกิจฉบับเต็ม 9 sections — concept, services, location, financials, ops, marketing, legal, risks, roadmap'
+  },
+  {
+    id: 'plan',
+    title: 'Implementation Plan',
+    meta: '10 tracks · เดือน -6 ถึง 12',
+    path: 'superpowers/plans/2026-05-09-massage-shop-implementation.md',
+    description: 'Plan ลงมือจริง รายเดือนพร้อม checklist, contacts, costs, timelines'
+  },
+  {
+    id: 'jd',
+    title: 'Spa Manager JD',
+    meta: 'ไทย + อังกฤษ',
+    path: 'recruitment/spa-manager-jd.md',
+    description: 'Job description ผู้จัดการร้านสปา 2 ภาษา + screening tips'
+  }
+];
+
+// Configure marked
+marked.setOptions({
+  breaks: true,
+  gfm: true,
+  headerIds: true,
+  mangle: false
+});
+
+// Build sidebar doc list
+const docList = document.getElementById('docList');
+DOCS.forEach(doc => {
+  const li = document.createElement('li');
+  li.innerHTML = `
+    <a href="#${doc.id}" class="doc-link" data-id="${doc.id}">
+      ${doc.title}
+      <span class="doc-meta">${doc.meta}</span>
+    </a>
+  `;
+  docList.appendChild(li);
+});
+
+// Build welcome cards
+const welcomeCards = document.getElementById('welcomeCards');
+DOCS.forEach(doc => {
+  const a = document.createElement('a');
+  a.href = `#${doc.id}`;
+  a.className = 'welcome-doc-card';
+  a.innerHTML = `
+    <h3>${doc.title}</h3>
+    <p>${doc.description}</p>
+  `;
+  welcomeCards.appendChild(a);
+});
+
+const content = document.getElementById('content');
+const tocEl = document.getElementById('toc');
+const sidebar = document.getElementById('sidebar');
+const backdrop = document.getElementById('backdrop');
+const menuToggle = document.getElementById('menuToggle');
+const topTitle = document.getElementById('topTitle');
+const backTop = document.getElementById('backTop');
+
+function openSidebar() {
+  sidebar.classList.add('open');
+  backdrop.classList.add('show');
+}
+function closeSidebar() {
+  sidebar.classList.remove('open');
+  backdrop.classList.remove('show');
+}
+
+menuToggle.addEventListener('click', () => {
+  sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+});
+backdrop.addEventListener('click', closeSidebar);
+
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('show', window.scrollY > 400);
+});
+backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// Wrap tables in scrollable container
+function wrapTables(container) {
+  container.querySelectorAll('table').forEach(table => {
+    if (!table.parentElement.classList.contains('table-wrapper')) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    }
+  });
+}
+
+// Generate TOC from rendered content
+function buildTOC(container) {
+  const headings = container.querySelectorAll('h1, h2, h3, h4');
+  if (headings.length === 0) {
+    tocEl.innerHTML = '<div style="padding: 0 8px; font-size: 13px; opacity: 0.6;">ไม่มีหัวข้อ</div>';
+    return;
+  }
+  const ul = document.createElement('ul');
+  ul.className = 'toc-list';
+  headings.forEach((h, idx) => {
+    if (!h.id) h.id = 'h-' + idx + '-' + h.textContent.toLowerCase().replace(/[^a-z0-9ก-๙]+/gi, '-').slice(0, 40);
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent;
+    a.className = 'toc-' + h.tagName.toLowerCase();
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.getElementById(h.id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (window.innerWidth < 900) closeSidebar();
+      }
+    });
+    li.appendChild(a);
+    ul.appendChild(li);
+  });
+  tocEl.innerHTML = '';
+  tocEl.appendChild(ul);
+}
+
+async function loadDoc(docId) {
+  const doc = DOCS.find(d => d.id === docId);
+  if (!doc) return;
+
+  // Update active state in sidebar
+  document.querySelectorAll('.doc-link').forEach(a => a.classList.remove('active'));
+  document.querySelector(`.doc-link[data-id="${docId}"]`)?.classList.add('active');
+
+  topTitle.textContent = doc.title;
+  content.classList.add('loading');
+  content.innerHTML = '<div class="loading-spinner">กำลังโหลด...</div>';
+
+  try {
+    const res = await fetch(doc.path);
+    if (!res.ok) throw new Error('โหลดไฟล์ไม่สำเร็จ (HTTP ' + res.status + ')');
+    const md = await res.text();
+    const html = marked.parse(md);
+    content.innerHTML = '<article class="markdown">' + html + '</article>';
+    const article = content.querySelector('.markdown');
+    wrapTables(article);
+    buildTOC(article);
+    window.scrollTo(0, 0);
+    if (window.innerWidth < 900) closeSidebar();
+  } catch (err) {
+    content.innerHTML = `
+      <div style="text-align:center; padding:48px 16px;">
+        <h2 style="color:#a04040;">โหลดเอกสารไม่ได้</h2>
+        <p style="color:var(--text-muted); margin-top:12px;">${err.message}</p>
+        <p style="color:var(--text-muted); margin-top:12px; font-size:13px;">
+          ถ้ารันด้วย <code>file://</code> browser จะ block — ต้องใช้ HTTP server<br>
+          ลอง: <code>python3 -m http.server</code> ในโฟลเดอร์ docs/
+        </p>
+      </div>
+    `;
+  } finally {
+    content.classList.remove('loading');
+  }
+}
+
+// Hash routing
+function handleHashChange() {
+  const hash = window.location.hash.slice(1);
+  if (hash && DOCS.find(d => d.id === hash)) {
+    loadDoc(hash);
+  } else {
+    // Welcome page
+    document.querySelectorAll('.doc-link').forEach(a => a.classList.remove('active'));
+    topTitle.textContent = 'Business Plan';
+    tocEl.innerHTML = '<div style="padding: 0 8px; font-size: 13px; opacity: 0.6;">เลือกเอกสาร</div>';
+  }
+}
+
+window.addEventListener('hashchange', handleHashChange);
+handleHashChange();
+
+// Build date
+document.getElementById('buildDate').textContent = new Date().toLocaleDateString('th-TH', { year: 'numeric', month: 'short', day: 'numeric' });
+</script>
+
+</body>
+</html>
